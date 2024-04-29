@@ -53,7 +53,7 @@ jobs:
           cat instrument_log_text.txt | xcpretty -r junit
           
           # echo "$JUNIT_RESULT"
-          echo "Sending test results to test management"
+          echo "Sending test resultss to test management"
           curl -k -X POST "https://test-management.browserstack.com/api/v1/import/results/xml/junit" \
           -u "${{ env.BS_TM_KEY }}" \
           -F project_name="${{ env.TEST_MANAGEMENT_PROJECT_NAME }}" \
